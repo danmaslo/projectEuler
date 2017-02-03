@@ -1,4 +1,9 @@
-import problems.*;
+/**
+ * Project Euler
+ *
+ * @link https://projecteuler.net/
+ * @author hi@danielmaslo.com
+ */
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -25,9 +30,8 @@ public class Main {
             String className = "problems.E" + String.format("%03d", problem);
 
             // find solution method
-            Method m = null;
             try {
-                m = Class.forName(className).getMethod("solution");
+                Method m = Class.forName(className).getMethod("solution");
 
                 // print solution to terminal
                 System.out.println((int) m.invoke(null));

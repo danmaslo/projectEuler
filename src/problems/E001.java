@@ -1,9 +1,8 @@
 package problems;
 
 /**
- * @see http://projecteuler.net/problem=1
- *
- * @author Daniel Maslo <http://www.danielmaslo.com>
+ * @link http://projecteuler.net/problem=1
+ * @author hi@danielmaslo.com
  */
 public class E001 {
     public static int solution() {
