@@ -1,4 +1,5 @@
-*.class
+# Built app
+#*.class
 
 # Package Files #
 *.jar
