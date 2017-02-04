@@ -21,8 +21,8 @@ cd out/production/projectEuler
 
 ```bash
 # run the app
-java Main
+java Euler
 
 # run the app for specific problem (number 13 for example)
-java Main 13
+java Euler 13
 ```

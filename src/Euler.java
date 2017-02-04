@@ -1,15 +1,14 @@
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.Scanner;
+
 /**
  * Project Euler
  *
  * @link https://projecteuler.net/
  * @author hi@danielmaslo.com
  */
-
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.Scanner;
-
-public class Main {
+public class Euler {
 
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException {
         int problem = 0;
@@ -34,7 +33,7 @@ public class Main {
                 Method m = Class.forName(className).getMethod("solution");
 
                 // print solution to terminal
-                System.out.println((int) m.invoke(null));
+                System.out.println((Object) m.invoke(null));
             }
             catch (ClassNotFoundException e) {
                 System.out.println("Problem not solved (yet...)");
